@@ -1,1 +1,10 @@
-gi
+CREATE DATABASE `Empresa`;
+
+USE `Empresa`;
+
+CREATE TABLE
+    `Funcionário` (
+        `CODIGO_FUNC` INTEGER NOT NULL AUTO_INCREMENT,
+        `NOME_FUNC` VARCHAR(200) NOT NULL,
+        PRIMARY KEY (CODIGO_FUNC)
+    );
