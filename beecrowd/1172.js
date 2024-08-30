@@ -1,6 +1,9 @@
 var input = require('fs').readFileSync('dev/stdin', 'utf8');
 var lines = input.split('\n');
 
-for (i = 0; i < 10; i++) {
-    lines[i] > 0 ? console.log(`X[${i}] = ${lines[i]}`) : console.log(`X[${i}] = 1`);
+for (let i = 0; i < lines.length; i++) {
+    if (lines[i] <= 0) {
+        lines[i] = 1
+    }
+    console.log(`X[${i}] = ${Number(lines[i])}`)
 }
