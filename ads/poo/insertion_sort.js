@@ -8,3 +8,5 @@ function insertion_sort(array) {
   }
   return array;
 }
+
+export default insertion_sort;
