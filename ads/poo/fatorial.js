@@ -5,3 +5,4 @@ function fatorial(num) {
   return num * fatorial(num - 1);
 }
 
+export default fatorial;

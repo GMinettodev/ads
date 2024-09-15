@@ -11,3 +11,5 @@ function bubble_sort(array) {
   }
   return array;
 }
+
+export default bubble_sort;

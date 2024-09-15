@@ -12,3 +12,5 @@ function selection_sort(array) {
   }
   return array;
 }
+
+export default selection_sort;
