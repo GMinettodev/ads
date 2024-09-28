@@ -21,11 +21,13 @@ class Stack {
         return this._count === 0;
     }
 
+    // Redefine o objeto
     clear() {
         this._count = 0;
         this._items = {};
     }
 
+    // Remove o ultimo elemento adicionado no objeto
     pop() {
         if (this.isEmpty()) {
             return undefined;
@@ -44,6 +46,7 @@ class Stack {
         return this._items[this._count - 1];
     }
 
+    // Converte o objeto em uma string
     toString() {
         if (this.isEmpty()) {
             return "";
@@ -51,10 +54,10 @@ class Stack {
         let objString = `${this._items[0]}`;
         for (let i = 1; i < this._count; i++) {
             objString = `${objString},${this._items[i]}`;
-            return objString;
         }
+        return objString;
     }
 
 }
 
-export default Stack;
+module.exports = { Stack };
